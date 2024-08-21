@@ -1,0 +1,268 @@
+/* start rules */
+a{
+    
+    text-decoration: none;
+    
+}
+/* end rules */
+body{
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+/* navbar start */
+.dot{
+    color: #17b978;
+}
+.logo{
+    font-size: 30px;
+}
+.links1{
+    font-weight: 600;
+
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #17b978;
+    position: relative;
+}
+.navbar-nav .nav-link.active::after, .navbar-nav .nav-link.show::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 80%;
+    background-color: #17b978;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: line-animation 0.3s;
+}
+@keyframes line-animation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+/* navbar end */
+
+/* start body */
+/* start home */
+.start-body{
+    margin-top: 120px;
+}
+.img1{
+    height: 100%;
+    width: 100%;
+}
+.btn1{
+    background-color: #17b978;
+    color: white;
+}
+.btn1:hover{
+    background-color: #17b978;
+    color: white;
+}
+.text1-home{
+    color: #17b978;
+    font-weight: 800;
+    font-size: small;
+    margin: 0;
+}
+.text2-home{
+    font-weight: 900;
+    font-size: 50px;
+}
+.text3-home{
+    font-weight: 400;
+    font-size: 20px;
+}
+.spaces{
+    margin-bottom: 200px;
+}
+
+/* end home */
+/* start about */
+.sub-head-text{
+    font-size: 40px;
+    font-weight: 600;
+}
+.bg-grey{
+    height: 100%;
+    width: 100%;
+    background-color: #f5f4fb;
+    text-align: center;
+    padding: 30px;
+}
+/* end about */
+/* start chapter */
+.test{
+    height: 10000px;
+    background-color: black;
+}
+.list-heads{
+    position: sticky;
+    top: 300px;
+    height: 100vh;
+    overflow-y: auto;
+}
+.list-group-item{
+    border: none;
+    transition: 1s;
+}
+.list-group-item.active{
+    background-color: white;
+    color: #17b978;
+    position: relative;
+    transform: translateX(5%);
+    width: 95%;
+    
+}
+.list-group-item.active::after{
+    content: "";
+    position: absolute;
+    background-color: #17b978;
+    width: 20px;
+    height: 1px;
+    left: -5px;
+    top: 50%;
+    animation: line-animation2 0.3s;
+    
+}
+@keyframes line-animation2 {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 20px;
+    }
+}
+.box{
+    background-color: #f5f4fb;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+.box p{
+    font-weight: 400;
+}
+.box h1{
+    font-weight: 700;
+}
+.icons1{
+    font-size: 60px;
+    color: #17b978;
+}
+.line{
+    width: 80px;
+    height: 2px;
+    background-color: #17b978;
+}
+/*end chapter */
+/* start reviews */
+.reviews{
+    background-image: url("../imgs/xbg_4.jpg.pagespeed.ic.uyyupfLttr.webp");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+}
+.reviews::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #17b9784e;
+}
+.cards{
+    transform: translateY(70%);
+}
+.card1{
+    background-color: white;
+    width: 250px;
+    
+    padding: 20px;
+    border-radius: 15px;
+}
+.img2{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+.dots{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    background-color: #17b978;
+}
+.dot{
+    font-size: 40px;
+}
+/* start books */
+.card2{
+    background-image: url("../imgs/xbook-1.jpg.pagespeed.ic.7REd66f0KP.webp");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    position: relative;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.card2::after{
+    content: "";
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    transition: 1s;
+    
+    
+}
+.card2-content{
+    opacity: 0;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+}
+.card2:hover .card2-content{
+    opacity: 1;
+}
+.card2:hover::after{
+    background-color: rgba(0, 0, 0, 0.408);
+}
+/*start author*/
+.author{
+    background-color: #f5f4fb;
+    padding: 20px;
+}
+.div-img3{
+    width: 100%;
+    height: 100%;
+}
+.img3{
+    width: 100%;
+    height: 100%;
+}
+/*start contact*/
+.icons2{
+    font-size: 40px;
+    color: white;
+}
+.div-icons2{
+    width: 80px;
+    height: 80px;
+    background-color: #17b978;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    height: 500px;
+    background-color: black;
+}
